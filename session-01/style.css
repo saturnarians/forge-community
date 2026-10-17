@@ -1,0 +1,96 @@
+/* Shared palette for both Slidev color schemes. Mermaid switches its own theme with Slidev. */
+:root {
+  color-scheme: light;
+  --forge-ink: #f8fafc;
+  --forge-panel: #ffffff;
+  --forge-panel-soft: #f1f5f9;
+  --forge-text: #1e293b;
+  --forge-heading: #0f172a;
+  --forge-cyan: #036b80;
+  --forge-blue: #1d4ed8;
+  --forge-muted: #475569;
+  --forge-line: rgba(15, 23, 42, .18);
+  --forge-glow: rgba(14, 165, 233, .10);
+  --forge-background-end: #edf4fb;
+  --forge-panel-overlay: rgba(255, 255, 255, .9);
+  --forge-table-head: rgba(8, 145, 178, .12);
+  --forge-quote-bg: rgba(224, 242, 254, .75);
+}
+
+html.dark {
+  color-scheme: dark;
+  --forge-ink: #0b1220;
+  --forge-panel: #111c2d;
+  --forge-panel-soft: #172438;
+  --forge-text: #e8eef7;
+  --forge-heading: #f8fafc;
+  --forge-cyan: #67e8f9;
+  --forge-blue: #93c5fd;
+  --forge-muted: #a8b6c9;
+  --forge-line: rgba(148, 163, 184, .3);
+  --forge-glow: rgba(56, 189, 248, .10);
+  --forge-background-end: #0e1726;
+  --forge-panel-overlay: rgba(17, 28, 45, .9);
+  --forge-table-head: rgba(103, 232, 249, .14);
+  --forge-quote-bg: rgba(23, 36, 56, .82);
+}
+
+.slidev-layout {
+  color: var(--forge-text);
+  background:
+    radial-gradient(ellipse at 92% 4%, var(--forge-glow), transparent 34%),
+    linear-gradient(135deg, var(--forge-ink), var(--forge-background-end) 72%);
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  color: var(--forge-heading);
+  letter-spacing: -.035em;
+}
+
+.slidev-layout h1 { font-weight: 760; }
+.slidev-layout h2 { font-weight: 700; }
+.slidev-layout h1 + p { opacity: .82; }
+.slidev-layout p,
+.slidev-layout li { color: var(--forge-text); }
+.slidev-layout strong { color: var(--forge-cyan); }
+.slidev-layout a { color: var(--forge-blue); }
+.slidev-layout table { width: 100%; border-collapse: collapse; font-size: .86em; }
+.slidev-layout th {
+  color: var(--forge-heading);
+  background: var(--forge-table-head);
+  text-align: left;
+}
+.slidev-layout td,
+.slidev-layout th {
+  border: 1px solid var(--forge-line);
+  padding: .55em .7em;
+}
+.slidev-layout blockquote {
+  border-left: 3px solid var(--forge-cyan);
+  background: var(--forge-quote-bg);
+  padding: .65em 1em;
+  border-radius: 0 .65em .65em 0;
+}
+.slidev-layout pre { border: 1px solid var(--forge-line); border-radius: .8rem; }
+.slidev-layout .mermaid {
+  padding: .5rem;
+  border: 1px solid var(--forge-line);
+  border-radius: .8rem;
+  background: var(--forge-panel);
+}
+.forge-kicker {
+  color: var(--forge-cyan);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .72rem;
+  font-weight: 700;
+}
+.forge-panel {
+  border: 1px solid var(--forge-line);
+  background: var(--forge-panel-overlay);
+  border-radius: 1rem;
+  padding: 1rem 1.15rem;
+}
+.forge-muted { color: var(--forge-muted); }
