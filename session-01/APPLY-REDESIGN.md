@@ -15,11 +15,11 @@
 ## Validate locally
 ```bash
 pnpm install --frozen-lockfile
-pnpm exec slidev session-01-intro.md
-pnpm exec slidev session-02-rendering.md
-pnpm exec slidev session-03-state-data.md
-pnpm exec slidev session-04-performance-reliability.md
-pnpm exec slidev session-05-security-capstone.md
+pnpm  slidev session-01-intro.md
+pnpm  slidev session-02-rendering.md
+pnpm  slidev session-03-state-data.md
+pnpm  slidev session-04-performance-reliability.md
+pnpm  slidev session-05-security-capstone.md
 ```
 
 Build/export commands depend on the project's existing scripts. Check each deck in the browser and export before presenting.
